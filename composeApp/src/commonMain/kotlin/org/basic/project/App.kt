@@ -22,5 +22,23 @@ import kmpbasico.composeapp.generated.resources.compose_multiplatform
 @Composable
 fun App() {
     MaterialTheme {
+        Column(
+        modifier = Modifier
+            .background(MaterialTheme.colorScheme.primarycontainer)
+            .safeContentPadding()
+            .fillMaxSize(),
+
+            horizontalAligment = Aligment.CenterHorizontally()
+        ) {
+            Text {
+                text = 'Hola Mundo'
+            }
+            Text {
+                text = 'Programacion 2'
+            }
+            Text {
+                text = 'Soy e mejor'
+            }
+        }
     }
 }
